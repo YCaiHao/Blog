@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title %}New Post{% endblock %}
+
+{% block content %}
+    <div class="row h-100 page-header justify-content-center align-items-center">
+        <h1>New Post</h1>
+    </div>
+    {{ render_form(form) }}
+    {{ simplemde.css }}
+    {{ simplemde.js }}
+    {{ simplemde.load }}
+{% endblock %}
