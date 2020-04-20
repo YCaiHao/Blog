@@ -84,6 +84,12 @@
         {% endfor %}
 
         {% block content %}{% endblock %}
+        
+        {% block footer %}
+            <footer class="row justify-content-center align-items-center">
+                
+            </footer>
+        {% endblock %}
 
         {% block scripts %}
             {{ moment.include_moment() }}
